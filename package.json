@@ -1,17 +1,17 @@
 {
   "name": "ckeditor5-startmobile-custom-build",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "build/index.js",
   "peerDependencies": {
-    "react": "^17.0.1"
+    "react": ">=16.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:nmartinezb3/npm-react-component-starter.git"
+    "url": "git@github.com:norflin321/ckeditor5-startmobile-custom-build.git"
   },
   "bugs": {
-    "url": "git@github.com:nmartinezb3/npm-react-component-starter.git"
+    "url": "git@github.com:norflin321/ckeditor5-startmobile-custom-build.git"
   },
   "scripts": {
     "start": "webpack --watch",
