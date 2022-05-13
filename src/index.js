@@ -78,7 +78,7 @@ Editor.defaultConfig = {
 			'mediaEmbed'
 		]
 	},
-	language: 'en',
+	language: 'ru',
 	image: {
 		toolbar: [
 			'imageTextAlternative',
