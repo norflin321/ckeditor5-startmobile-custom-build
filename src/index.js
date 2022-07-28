@@ -35,6 +35,13 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount.js';
+import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters';
+import emojies from './emojies';
+
+function SpecialCharactersEmoji(editor) {
+  editor.plugins.get('SpecialCharacters').addItems('Emoji', emojies);
+}
+
 
 class Editor extends ClassicEditor {}
 
@@ -75,7 +82,9 @@ Editor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	Underline,
-	WordCount
+	WordCount,
+  SpecialCharacters,
+  SpecialCharactersEmoji
 ];
 
 // Editor configuration.
@@ -102,7 +111,8 @@ Editor.defaultConfig = {
 			'code',
 			'insertTable',
 			'htmlEmbed',
-			'imageInsert'
+			'imageInsert',
+      'specialCharacters',
 		]
 	},
 	language: 'ru',
